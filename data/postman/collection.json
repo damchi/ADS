@@ -1,0 +1,760 @@
+{
+	"info": {
+		"_postman_id": "b8af2119-904a-44da-88d9-764042abe089",
+		"name": "Backend-Test",
+		"description": "This postman collection contain all the endpoint to test the api of the candidat",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "List of vehicle makes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/vehicle-makes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"vehicle-makes"
+					]
+				},
+				"description": "Get the list of the vehicle make"
+			},
+			"response": [
+				{
+					"name": "Success Response",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/vehicle-makes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"vehicle-makes"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 12 Jan 2021 22:14:20 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "503"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"vehicle_makes\": [\n        {\n            \"id\": 1,\n            \"name\": \"Acura\"\n        },\n        {\n            \"id\": 2,\n            \"name\": \"Alfa Romeo\"\n        },\n        {\n            \"id\": 3,\n            \"name\": \"Audi\"\n        },\n        {\n            \"id\": 4,\n            \"name\": \"Cadillac\"\n        },\n        {\n            \"id\": 5,\n            \"name\": \"Chevrolet\"\n        },\n        {\n            \"id\": 6,\n            \"name\": \"Dodge\"\n        },\n        {\n            \"id\": 7,\n            \"name\": \"Ferrari\"\n        },\n        {\n            \"id\": 8,\n            \"name\": \"Fiat\"\n        },\n        {\n            \"id\": 9,\n            \"name\": \"Ford\"\n        },\n        {\n            \"id\": 10,\n            \"name\": \"Kia\"\n        },\n        {\n            \"id\": 11,\n            \"name\": \"Lexus\"\n        },\n        {\n            \"id\": 12,\n            \"name\": \"Mazda\"\n        },\n        {\n            \"id\": 13,\n            \"name\": \"Nissan\"\n        },\n        {\n            \"id\": 14,\n            \"name\": \"Opel\"\n        },\n        {\n            \"id\": 15,\n            \"name\": \"Renault\"\n        },\n        {\n            \"id\": 16,\n            \"name\": \"Subaru\"\n        },\n        {\n            \"id\": 17,\n            \"name\": \"Toyota\"\n        },\n        {\n            \"id\": 18,\n            \"name\": \"Volkswagen\"\n        },\n        {\n            \"id\": 19,\n            \"name\": \"Volvo\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "List of vehicle models",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/vehicle-models",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"vehicle-models"
+					]
+				},
+				"description": "Get the list of the vehicle model"
+			},
+			"response": [
+				{
+					"name": "Success Response",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/vehicle-models",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"vehicle-models"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 12 Jan 2021 22:14:20 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "503"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"vehicle-model\": [\n        {\n            \"id\": 1,\n            \"name\": \"Integra\",\n            \"date\": \"\"\n        },\n        {\n            \"id\": 2,\n            \"name\": \"Legend\",\n            \"date\": \"\"\n        },\n        {\n            \"id\": 3,\n            \"name\": \"Vigor\",\n            \"date\": \"\"\n        },\n        {\n            \"id\": 4,\n            \"name\": \"A4\",\n            \"date\": \"\"\n        },\n        {\n            \"id\": 5,\n            \"name\": \"Q7\",\n            \"date\": \"\"\n        },\n        {\n            \"id\": 6,\n            \"name\": \"CTS\",\n            \"date\": \"\"\n        },\n        {\n            \"id\": 7,\n            \"name\": \"Escalade\",\n            \"date\": \"\"\n        },\n        {\n            \"id\": 8,\n            \"name\": \"Eldorado\",\n            \"date\": \"\"\n        },\n        {\n            \"id\": 9,\n            \"name\": \"Concours\",\n            \"date\": \"\"\n        },\n        {\n            \"id\": 10,\n            \"name\": \"Escalade Hybrid\",\n            \"date\": \"\"\n        },\n        {\n            \"id\": 11,\n            \"name\": \"CTS-V\",\n            \"date\": \"\"\n        },\n        {\n            \"id\": 12,\n            \"name\": \"Colorado\",\n            \"date\": \"\"\n        },\n        {\n            \"id\": 13,\n            \"name\": \"Corvette\",\n            \"date\": \"\"\n        },\n        {\n            \"id\": 14,\n            \"name\": \"Epica\",\n            \"date\": \"\"\n        },\n        {\n            \"id\": 15,\n            \"name\": \"Caravan\",\n            \"date\": \"\"\n        },\n        {\n            \"id\": 16,\n            \"name\": \"Durango\",\n            \"date\": \"\"\n        },\n        {\n            \"id\": 17,\n            \"name\": \"Grand Caravan\",\n            \"date\": \"\"\n        },\n        {\n            \"id\": 18,\n            \"name\": \"Crown Victoria\",\n            \"date\": \"\"\n        },\n        {\n            \"id\": 19,\n            \"name\": \"Focus\",\n            \"date\": \"\"\n        },\n        {\n            \"id\": 20,\n            \"name\": \"F-250\",\n            \"date\": \"\"\n        },\n        {\n            \"id\": 21,\n            \"name\": \"F-350\",\n            \"date\": \"\"\n        },\n        {\n            \"id\": 22,\n            \"name\": \"F-450\",\n            \"date\": \"\"\n        },\n        {\n            \"id\": 23,\n            \"name\": \"Optima\",\n            \"date\": \"\"\n        },\n        {\n            \"id\": 24,\n            \"name\": \"Rio\",\n            \"date\": \"\"\n        },\n        {\n            \"id\": 25,\n            \"name\": \"Soul\",\n            \"date\": \"\"\n        },\n        {\n            \"id\": 26,\n            \"name\": \"Picanto\",\n            \"date\": \"\"\n        },\n        {\n            \"id\": 27,\n            \"name\": \"ES 330\",\n            \"date\": \"\"\n        },\n        {\n            \"id\": 28,\n            \"name\": \"GS 430\",\n            \"date\": \"\"\n        },\n        {\n            \"id\": 29,\n            \"name\": \"GX 470\",\n            \"date\": \"\"\n        },\n        {\n            \"id\": 30,\n            \"name\": \"IS 300\",\n            \"date\": \"\"\n        },\n        {\n            \"id\": 31,\n            \"name\": \"LX 470\",\n            \"date\": \"\"\n        },\n        {\n            \"id\": 32,\n            \"name\": \"RC 200t\",\n            \"date\": \"\"\n        },\n        {\n            \"id\": 33,\n            \"name\": \"GS 200t\",\n            \"date\": \"\"\n        },\n        {\n            \"id\": 34,\n            \"name\": \"Tribute\",\n            \"date\": \"\"\n        },\n        {\n            \"id\": 35,\n            \"name\": \"MX-5\",\n            \"date\": \"\"\n        },\n        {\n            \"id\": 36,\n            \"name\": \"CX-7\",\n            \"date\": \"\"\n        },\n        {\n            \"id\": 37,\n            \"name\": \"CX-3\",\n            \"date\": \"\"\n        },\n        {\n            \"id\": 38,\n            \"name\": \"CX-30\",\n            \"date\": \"\"\n        },\n        {\n            \"id\": 39,\n            \"name\": \"Frontier\",\n            \"date\": \"\"\n        },\n        {\n            \"id\": 40,\n            \"name\": \"Maxima\",\n            \"date\": \"\"\n        },\n        {\n            \"id\": 41,\n            \"name\": \"Murano\",\n            \"date\": \"\"\n        },\n        {\n            \"id\": 42,\n            \"name\": \"Quest\",\n            \"date\": \"\"\n        },\n        {\n            \"id\": 43,\n            \"name\": \"Sentra\",\n            \"date\": \"\"\n        },\n        {\n            \"id\": 44,\n            \"name\": \"Titan\",\n            \"date\": \"\"\n        },\n        {\n            \"id\": 45,\n            \"name\": \"Navara\",\n            \"date\": \"\"\n        },\n        {\n            \"id\": 46,\n            \"name\": \"Patrol\",\n            \"date\": \"\"\n        },\n        {\n            \"id\": 47,\n            \"name\": \"Forester\",\n            \"date\": \"\"\n        },\n        {\n            \"id\": 48,\n            \"name\": \"Impreza\",\n            \"date\": \"\"\n        },\n        {\n            \"id\": 49,\n            \"name\": \"Loyale\",\n            \"date\": \"\"\n        },\n        {\n            \"id\": 50,\n            \"name\": \"Tribeca\",\n            \"date\": \"\"\n        },\n        {\n            \"id\": 51,\n            \"name\": \"Crosstrek\",\n            \"date\": \"\"\n        },\n        {\n            \"id\": 52,\n            \"name\": \"Avalon\",\n            \"date\": \"\"\n        },\n        {\n            \"id\": 53,\n            \"name\": \"Camry\",\n            \"date\": \"\"\n        },\n        {\n            \"id\": 54,\n            \"name\": \"Solara\",\n            \"date\": \"\"\n        },\n        {\n            \"id\": 55,\n            \"name\": \"Corolla\",\n            \"date\": \"\"\n        },\n        {\n            \"id\": 56,\n            \"name\": \"Tacoma\",\n            \"date\": \"\"\n        },\n        {\n            \"id\": 57,\n            \"name\": \"Hilux\",\n            \"date\": \"\"\n        },\n        {\n            \"id\": 58,\n            \"name\": \"Venza\",\n            \"date\": \"\"\n        },\n        {\n            \"id\": 59,\n            \"name\": \"Prius V\",\n            \"date\": \"\"\n        },\n        {\n            \"id\": 60,\n            \"name\": \"Prius C\",\n            \"date\": \"\"\n        },\n        {\n            \"id\": 61,\n            \"name\": \"Auris\",\n            \"date\": \"\"\n        },\n        {\n            \"id\": 62,\n            \"name\": \"Verso\",\n            \"date\": \"\"\n        },\n        {\n            \"id\": 63,\n            \"name\": \"iQ\",\n            \"date\": \"\"\n        },\n        {\n            \"id\": 64,\n            \"name\": \"Mirai\",\n            \"date\": \"\"\n        },\n        {\n            \"id\": 65,\n            \"name\": \"Beetle\",\n            \"date\": \"\"\n        },\n        {\n            \"id\": 66,\n            \"name\": \"Jetta GLI\",\n            \"date\": \"\"\n        },\n        {\n            \"id\": 67,\n            \"name\": \"Vento\",\n            \"date\": \"\"\n        },\n        {\n            \"id\": 68,\n            \"name\": \"Sagitar\",\n            \"date\": \"\"\n        },\n        {\n            \"id\": 69,\n            \"name\": \"Golf Mk4\",\n            \"date\": \"\"\n        },\n        {\n            \"id\": 70,\n            \"name\": \"Golf IV\",\n            \"date\": \"\"\n        },\n        {\n            \"id\": 71,\n            \"name\": \"Crafter\",\n            \"date\": \"\"\n        },\n        {\n            \"id\": 72,\n            \"name\": \"Atlas\",\n            \"date\": \"\"\n        },\n        {\n            \"id\": 73,\n            \"name\": \"Caddy\",\n            \"date\": \"\"\n        },\n        {\n            \"id\": 74,\n            \"name\": \"Touran\",\n            \"date\": \"\"\n        },\n        {\n            \"id\": 75,\n            \"name\": \"Amarok\",\n            \"date\": \"\"\n        },\n        {\n            \"id\": 76,\n            \"name\": \"S40\",\n            \"date\": \"\"\n        },\n        {\n            \"id\": 77,\n            \"name\": \"S70\",\n            \"date\": \"\"\n        },\n        {\n            \"id\": 78,\n            \"name\": \"V90\",\n            \"date\": \"\"\n        },\n        {\n            \"id\": 79,\n            \"name\": \"850\",\n            \"date\": \"\"\n        },\n        {\n            \"id\": 80,\n            \"name\": \"940\",\n            \"date\": \"\"\n        },\n        {\n            \"id\": 81,\n            \"name\": \"500\",\n            \"date\": \"\"\n        },\n        {\n            \"id\": 82,\n            \"name\": \"500 Turbo\",\n            \"date\": \"\"\n        },\n        {\n            \"id\": 83,\n            \"name\": \"124 Spider\",\n            \"date\": \"\"\n        },\n        {\n            \"id\": 84,\n            \"name\": \"Mokka\",\n            \"date\": \"\"\n        },\n        {\n            \"id\": 85,\n            \"name\": \"Insignia\",\n            \"date\": \"\"\n        },\n        {\n            \"id\": 86,\n            \"name\": \"Antara\",\n            \"date\": \"\"\n        },\n        {\n            \"id\": 87,\n            \"name\": \"Meriva\",\n            \"date\": \"\"\n        },\n        {\n            \"id\": 88,\n            \"name\": \"Kaptur\",\n            \"date\": \"\"\n        },\n        {\n            \"id\": 89,\n            \"name\": \"Koleos\",\n            \"date\": \"\"\n        },\n        {\n            \"id\": 90,\n            \"name\": \"Giulia\",\n            \"date\": \"\"\n        },\n        {\n            \"id\": 91,\n            \"name\": \"Stelvio\",\n            \"date\": \"\"\n        },\n        {\n            \"id\": 92,\n            \"name\": \"California\",\n            \"date\": \"\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Update vehicle make",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/vehicle-makes-update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"vehicle-makes-update"
+					]
+				},
+				"description": "Update a vehicle make"
+			},
+			"response": [
+				{
+					"name": "Success Response",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": [],
+						"url": {
+							"raw": "http://localhost:8080/api/vehicle-makes-update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"vehicle-makes-update"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 12 Jan 2021 22:14:20 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "503"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 1,\n    \"name\": \"vehicle\",\n    \"url\": \"test.cu\",\n    \"updated\": \"2021-03-05 16:11:20\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Add vehicle make",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/vehicle-makes-add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"vehicle-makes-add"
+					]
+				},
+				"description": "Add a vehicle make"
+			},
+			"response": [
+				{
+					"name": "Success Response",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": [],
+						"url": {
+							"raw": "http://localhost:8080/api/vehicle-makes-add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"vehicle-makes-add"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 12 Jan 2021 22:14:20 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "503"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 1,\n    \"name\": \"vehicle\",\n    \"url\": \"test.cu\",\n    \"created\": \"2021-03-05 16:11:20\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Remove vehicle make",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/vehicle-makes-remove",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"vehicle-makes-remove"
+					]
+				},
+				"description": "Remove a vehicle make"
+			},
+			"response": [
+				{
+					"name": "Success Response",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": [],
+						"url": {
+							"raw": "http://localhost:8080/api/vehicle-makes-remove",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"vehicle-makes-add"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 12 Jan 2021 22:14:20 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "503"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 1,\n    \"name\": \"vehicle\",\n    \"url\": \"test.cu\",\n    \"created\": \"2021-03-05 16:11:20\"\n updated\": \"2021-03-05 16:11:20\"}"
+				}
+			]
+		},
+		{
+			"name": "List of vehicles",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/vehicles",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"vehicles"
+					]
+				},
+				"description": "List of vehicles"
+			},
+			"response": [
+				{
+					"name": "Success Response",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": [],
+						"url": {
+							"raw": "http://localhost:8080/api/vehicles",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"vehicles"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 12 Jan 2021 22:14:20 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "503"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"vehicles\": [\n        {\n            \"id\": 1,\n            \"make\": \"Acura\",\n            \"model\": \"Integra\",\n            \"year\": 1988,\n            \"state\": 1,\n            \"created\": \"\",\n            \"updated\": \"\"\n        }}"
+				}
+			]
+		},
+		{
+			"name": "Add vehicle",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/vehicles-add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"vehicles-add"
+					]
+				},
+				"description": "Add a vehicle"
+			},
+			"response": [
+				{
+					"name": "Success Response",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": [],
+						"url": {
+							"raw": "http://localhost:8080/api/vehicles-add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"vehicles-add"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 12 Jan 2021 22:14:20 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "503"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 1,\n    \"name\": \"vehicle\",\n    \"url\": \"test.cu\",\n    \"created\": \"2021-03-05 16:11:20\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Remove vehicle",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/vehicles-remove/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"vehicles-add"
+					]
+				},
+				"description": "Remove a vehicle"
+			},
+			"response": [
+				{
+					"name": "Success Response",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": [],
+						"url": {
+							"raw": "http://localhost:8080/api/vehicles-remove/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"vehicles-remove"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 12 Jan 2021 22:14:20 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "503"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 1119,\n    \"make\": \"Cadillac\",\n    \"model\": \"Integra\",\n    \"year\": 2022,\n    \"state\": 0,\n    \"created\": \"2021-03-06 21:20:58\",\n    \"updated\": \"2021-03-06 21:24:21\"\n}"
+				}
+			]
+		},
+		{
+			"name": "View one vehicle",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/vehicles/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"vehicles"
+					]
+				},
+				"description": "View a vehicle"
+			},
+			"response": [
+				{
+					"name": "Success Response",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": [],
+						"url": {
+							"raw": "http://localhost:8080/api/vehicles/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"vehicles"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 12 Jan 2021 22:14:20 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "503"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 1,\n    \"make\": \"Acura\",\n    \"model\": \"Integra\",\n    \"year\": 1988,\n    \"state\": 1,\n    \"created\": \"\",\n    \"updated\": \"\"\n}"
+				}
+			]
+		},
+		{
+			"name": "View a vehicle model",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/vehicle-models/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"vehicle-models"
+					]
+				},
+				"description": "View a vehicle model"
+			},
+			"response": [
+				{
+					"name": "Success Response",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": [],
+						"url": {
+							"raw": "http://localhost:8080/api/vehicle-models/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"vehicle-models"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 12 Jan 2021 22:14:20 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "503"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 1,\n    \"name\": \"Integra\",\n    \"updated\": \"\"\n}"
+				}
+			]
+		},
+		{
+			"name": "View a vehicle make",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/vehicle-makes/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"vehicle-makes"
+					]
+				},
+				"description": "View a vehicle make"
+			},
+			"response": [
+				{
+					"name": "Success Response",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": [],
+						"url": {
+							"raw": "http://localhost:8080/api/vehicle-makes/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"vehicle-makes"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 12 Jan 2021 22:14:20 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "503"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 1,\n    \"name\": \"Acura\",\n    \"url\": \"https://www.acura.ca\",\n    \"state\": 1,\n    \"created\": \"\",\n    \"updated\": \"\"\n}"
+				}
+			]
+		}
+	]
+}
